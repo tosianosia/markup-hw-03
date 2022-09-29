@@ -4,6 +4,8 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
+  --border-color: #eeeeee;
+  --header-border-color: #ececec;
   --logo-black-color: #000000;
   --footer-bg-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
@@ -20,7 +22,25 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+/* Container */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Page header */
+
+.page-header {
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /* Logo */
@@ -74,23 +94,26 @@ body {
 /* Hero */
 
 .hero {
+  text-align: center;
   background-color: var(--footer-bg-color);
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
-/* Button */
+.hero .button {
+  min-width: 200px;
+  padding: 10px 32px;
 
-.button {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -98,18 +121,36 @@ body {
   color: var(--primary-white-color);
 
   background-color: var(--accent-color);
+  border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.hero .button:hover,
+.hero .button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
 
 /* Section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
+
+.section.secondary {
+  background-color: var(--secondary-bg-color);
+}
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -119,34 +160,66 @@ body {
 /* Features */
 
 .features .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
 
+.features .text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Team */
 
+.team .worker {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team .name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   color: var(--secondary-text-color);
 }
 
+.team .profession {
+  margin-bottom: 0;
+}
+
 .team .name,
 .team .profession {
+  margin-top: 0;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-/* Footer */
+/* Page footer */
 
-.footer {
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-bg-color);
 }
 
+/* Address */
+
 .address {
+  margin-top: 20px;
+
   font-style: normal;
   color: var(--primary-white-color);
+}
+
+.address .contacts {
+  margin-top: 9px;
 }
 
 .address .link {
@@ -155,15 +228,26 @@ body {
 }
 
 /* Стили для portfolio.html */
+
 /* Filter */
 
+.filter {
+  margin-bottom: 50px;
+}
+
 .filter .button {
+  padding: 6px 22px;
+
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 
   background-color: var(--secondary-bg-color);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter .button:hover,
@@ -174,7 +258,15 @@ body {
 
 /* Works */
 
+.works .content {
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
+}
+
 .works .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -182,6 +274,9 @@ body {
 }
 
 .works .type {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.88;
 }
