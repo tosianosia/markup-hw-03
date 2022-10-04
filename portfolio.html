@@ -20,32 +20,34 @@
   <body>
     <!-- Шапка страницы -->
     <header class="page-header">
-      <div class="container">
+      <div class="container flex-header">
         <!-- Основная навигация -->
-        <nav>
+        <nav class="main-nav">
           <!-- Логотип компании -->
           <a href="./index.html" class="logo" lang="en">
-            Web<span class="logo-black">Studio</span>
+            <span class="logo-accent">Web</span>Studio
           </a>
 
           <!-- Ссылки на другие страницы -->
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li>
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
               <a href="./portfolio.html" class="link current">Портфолио</a>
             </li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Почта и телефон -->
         <ul class="contacts list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -57,18 +59,28 @@
       <!-- Примеры работ -->
       <section class="section">
         <div class="container">
-          <h1 class="section-title">Примеры работ</h1>
+          <h1 class="visually-hidden">Примеры работ</h1>
 
           <ul class="filter list">
-            <li><button class="button" type="button">Все</button></li>
-            <li><button class="button" type="button">Веб-сайты</button></li>
-            <li><button class="button" type="button">Приложения</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
+            <li class="item">
+              <button class="button" type="button">Все</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
           </ul>
 
           <ul class="works list">
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-1.jpg"
                 alt="Сайт на экране ноутбука"
@@ -79,7 +91,7 @@
                 <p class="type">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-2.jpg"
                 alt="Два баскетболиста с мячом"
@@ -92,7 +104,7 @@
                 <p class="type">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-3.jpg"
                 alt="Логотип ресторана"
@@ -103,7 +115,7 @@
                 <p class="type">Приложение</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-4.jpg"
                 alt="Беспроводные наушники"
@@ -114,7 +126,7 @@
                 <p class="type">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-5.jpg"
                 alt="Две коробки на белом фоне"
@@ -125,7 +137,7 @@
                 <p class="type">Приложение</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-6.jpg"
                 alt="Сайт на экране монитора"
@@ -136,7 +148,7 @@
                 <p class="type">Веб-сайт</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-7.jpg"
                 alt="Открытый глянцевый журнал"
@@ -149,7 +161,7 @@
                 <p class="type">Дизайн</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-8.jpg"
                 alt="Бирка с названием компании"
@@ -160,7 +172,7 @@
                 <p class="type">Маркетинг</p>
               </div>
             </li>
-            <li>
+            <li class="card">
               <img
                 src="./images/picture-9.jpg"
                 alt="Человек работает на ноутбуке"
@@ -180,8 +192,8 @@
     <footer class="page-footer">
       <div class="container">
         <!-- Логотип компании -->
-        <a href="./index.html" class="logo" lang="en">
-          Web<span class="logo-white">Studio</span>
+        <a href="./index.html" class="logo inverse" lang="en">
+          <span class="logo-accent">Web</span>Studio
         </a>
 
         <!-- Контактные данные -->
@@ -190,13 +202,13 @@
           г. Киев, пр-т Леси Украинки, 26
 
           <!-- Почта и телефон -->
-          <ul class="contacts list">
-            <li>
+          <ul class="address-contacts list">
+            <li class="item">
               <a href="mailto:info@example.com" class="link">
                 info@example.com
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
             </li>
           </ul>

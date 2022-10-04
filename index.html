@@ -20,30 +20,34 @@
   <body>
     <!-- Шапка страницы -->
     <header class="page-header">
-      <div class="container">
+      <div class="container flex-header">
         <!-- Основная навигация -->
-        <nav>
+        <nav class="main-nav">
           <!-- Логотип компании -->
           <a href="./index.html" class="logo" lang="en">
-            Web<span class="logo-black">Studio</span>
+            <span class="logo-accent">Web</span>Studio
           </a>
 
           <!-- Ссылки на другие страницы -->
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
 
         <!-- Почта и телефон -->
         <ul class="contacts list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -63,31 +67,31 @@
       <!-- Преимущества -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
 
           <ul class="features list">
-            <li>
+            <li class="item">
               <h3 class="title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -103,22 +107,22 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
 
-          <ul class="list">
-            <li>
+          <ul class="section-list list">
+            <li class="item">
               <img
                 src="./images/img-1.jpg"
                 alt="Разработчик пишет код"
                 width="370"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-2.jpg"
                 alt="Разработчик создаёт кроссплатформенный сайт"
                 width="370"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img-3.jpg"
                 alt="Разработчик выбирает палитру"
@@ -135,7 +139,7 @@
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="team list">
-            <li>
+            <li class="item">
               <img
                 src="./images/photo-1.jpg"
                 alt="Фото Игоря Демьяненко"
@@ -146,7 +150,7 @@
                 <p class="profession" lang="en">Product Designer</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/photo-2.jpg"
                 alt="Фото Ольги Репиной"
@@ -157,7 +161,7 @@
                 <p class="profession" lang="en">Frontend Developer</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/photo-3.jpg"
                 alt="Фото Николая Тарасова"
@@ -168,7 +172,7 @@
                 <p class="profession" lang="en">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/photo-4.jpg"
                 alt="Фото Михаила Ермакова"
@@ -188,8 +192,8 @@
     <footer class="page-footer">
       <div class="container">
         <!-- Логотип компании -->
-        <a href="./index.html" class="logo" lang="en">
-          Web<span class="logo-white">Studio</span>
+        <a href="./index.html" class="logo inverse" lang="en">
+          <span class="logo-accent">Web</span>Studio
         </a>
 
         <!-- Контактные данные -->
@@ -198,13 +202,13 @@
           г. Киев, пр-т Леси Украинки, 26
 
           <!-- Почта и телефон -->
-          <ul class="contacts list">
-            <li>
+          <ul class="address-contacts list">
+            <li class="item">
               <a href="mailto:info@example.com" class="link">
                 info@example.com
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
             </li>
           </ul>
